@@ -1,0 +1,22 @@
+{% import "macros.html" as macros %}
+{% extends "entries.html" %}
+{% block content %}
+
+<div class="row">
+    <div class="col-md-2 text-right metadata">
+        <ul class="list-unstyled">
+            {{ entry.datetime }}
+        </ul>
+    </div>
+    <div class="col-md-10">
+        <h1>
+           {{ entry.title }}
+        </h1>
+        <a href="/entry/{{ entry.id }}/edit">Edit</a>
+        {{ entry.content }}
+    </div>
+</div>
+
+{% endblock %}
+
+
