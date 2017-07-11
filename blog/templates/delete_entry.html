@@ -1,0 +1,14 @@
+{% extends "view_entry.html" %}
+
+{% block content %}
+
+<h1>Are you sure you want to delete this entry?</h1>
+
+<div>
+<form role="form" method="POST">
+        <button type="submit" class="btn btn-default">Yes</button>
+        <button type="reset" class="btn btn-default">No</button>
+</form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,14 @@
+div.metadata {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+.mycontent {
+    color: green;
+}
+
+button a, a:visited {
+    text: black;
+    text-decoration: none;
+}
+

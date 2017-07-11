@@ -12,9 +12,13 @@
         <h1>
            {{ entry.title }}
         </h1>
-        <a href="/entry/{{ entry.id }}/edit">Edit</a>
+        <button class="btn btn-default"><a style="color:black; color:hover:black;" href="/entry/{{ entry.id }}/edit">Edit</a></button> 
         {{ entry.content }}
     </div>
+</div>
+
+<div>
+    <button><a href="/entry/{{ entry.id }}/delete">Delete</a></button>
 </div>
 
 {% endblock %}

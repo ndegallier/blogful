@@ -4,6 +4,7 @@
         <ul class="list-unstyled">
             <li>
                 {{ entry.datetime | dateformat("%d/%m/%y") }}
+                {{ entry.author.name }}
             </li>
         </ul>
     </div>
@@ -11,7 +12,7 @@
         <h1>
             <a href="/entry/{{ entry.id }}">{{ entry.title }}</a>
         </h1>
-        {{ entry.content | markdown }}
+        <div class="mycontent">{{ entry.content | markdown }}</div>
     </div>
 </div>
 {% endmacro %}
@@ -25,3 +26,4 @@
 {% endmacro %}
 
 
+# flask cache settings 
